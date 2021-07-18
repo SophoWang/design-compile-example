@@ -1,0 +1,264 @@
+################################################################################
+# default timing report
+################################################################################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Fsat2Slow
+Version: O-2018.06-SP1
+Date   : Sun Jul 18 09:49:56 2021
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: D0_reg (rising edge-triggered flip-flop clocked by CLKP)
+  Endpoint: D1_reg (rising edge-triggered flip-flop clocked by CLKM)
+  Path Group: CLKM
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLKP (rise edge)                  15.00      15.00
+  clock network delay (ideal)              0.00      15.00
+  D0_reg/CP (FD1)                          0.00      15.00 r
+  D0_reg/Q (FD1) <-                        1.42      16.42 f
+  D0 (net)                                 0.00      16.42 f
+  D1_reg/D (FD1)                           0.00      16.42 f
+  data arrival time                                  16.42
+
+  clock CLKM (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  D1_reg/CP (FD1)                          0.00      20.00 r
+  library setup time                      -0.80      19.20
+  data required time                                 19.20
+  -----------------------------------------------------------
+  data required time                                 19.20
+  data arrival time                                 -16.42
+  -----------------------------------------------------------
+  slack (MET)                                         2.78
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : Fsat2Slow
+Version: O-2018.06-SP1
+Date   : Sun Jul 18 09:49:56 2021
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: D0_reg (rising edge-triggered flip-flop clocked by CLKP)
+  Endpoint: D1_reg (rising edge-triggered flip-flop clocked by CLKM)
+  Path Group: CLKM
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLKP (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  D0_reg/CP (FD1)                          0.00      20.00 r
+  D0_reg/Q (FD1) <-                        1.24      21.24 r
+  D0 (net)                                 0.00      21.24 r
+  D1_reg/D (FD1)                           0.00      21.24 r
+  data arrival time                                  21.24
+
+  clock CLKM (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  D1_reg/CP (FD1)                          0.00      20.00 r
+  library hold time                        0.40      20.40
+  data required time                                 20.40
+  -----------------------------------------------------------
+  data required time                                 20.40
+  data arrival time                                 -21.24
+  -----------------------------------------------------------
+  slack (MET)                                         0.84
+
+
+1
+################################################################################
+# multicycle setup timing report
+################################################################################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Fsat2Slow
+Version: O-2018.06-SP1
+Date   : Sun Jul 18 09:49:56 2021
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: D0_reg (rising edge-triggered flip-flop clocked by CLKP)
+  Endpoint: D1_reg (rising edge-triggered flip-flop clocked by CLKM)
+  Path Group: CLKM
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLKP (rise edge)                  10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  D0_reg/CP (FD1)                          0.00      10.00 r
+  D0_reg/Q (FD1) <-                        1.42      11.42 f
+  D0 (net)                                 0.00      11.42 f
+  D1_reg/D (FD1)                           0.00      11.42 f
+  data arrival time                                  11.42
+
+  clock CLKM (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  D1_reg/CP (FD1)                          0.00      20.00 r
+  library setup time                      -0.80      19.20
+  data required time                                 19.20
+  -----------------------------------------------------------
+  data required time                                 19.20
+  data arrival time                                 -11.42
+  -----------------------------------------------------------
+  slack (MET)                                         7.78
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : Fsat2Slow
+Version: O-2018.06-SP1
+Date   : Sun Jul 18 09:49:56 2021
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: D0_reg (rising edge-triggered flip-flop clocked by CLKP)
+  Endpoint: D1_reg (rising edge-triggered flip-flop clocked by CLKM)
+  Path Group: CLKM
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLKP (rise edge)                  15.00      15.00
+  clock network delay (ideal)              0.00      15.00
+  D0_reg/CP (FD1)                          0.00      15.00 r
+  D0_reg/Q (FD1) <-                        1.24      16.24 r
+  D0 (net)                                 0.00      16.24 r
+  D1_reg/D (FD1)                           0.00      16.24 r
+  data arrival time                                  16.24
+
+  clock CLKM (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  D1_reg/CP (FD1)                          0.00      20.00 r
+  library hold time                        0.40      20.40
+  data required time                                 20.40
+  -----------------------------------------------------------
+  data required time                                 20.40
+  data arrival time                                 -16.24
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.16
+
+
+1
+################################################################################
+# multicycle hold timing report
+################################################################################
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Fsat2Slow
+Version: O-2018.06-SP1
+Date   : Sun Jul 18 09:49:56 2021
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: D0_reg (rising edge-triggered flip-flop clocked by CLKP)
+  Endpoint: D1_reg (rising edge-triggered flip-flop clocked by CLKM)
+  Path Group: CLKM
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLKP (rise edge)                  10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  D0_reg/CP (FD1)                          0.00      10.00 r
+  D0_reg/Q (FD1) <-                        1.42      11.42 f
+  D0 (net)                                 0.00      11.42 f
+  D1_reg/D (FD1)                           0.00      11.42 f
+  data arrival time                                  11.42
+
+  clock CLKM (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  D1_reg/CP (FD1)                          0.00      20.00 r
+  library setup time                      -0.80      19.20
+  data required time                                 19.20
+  -----------------------------------------------------------
+  data required time                                 19.20
+  data arrival time                                 -11.42
+  -----------------------------------------------------------
+  slack (MET)                                         7.78
+
+
+1
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : Fsat2Slow
+Version: O-2018.06-SP1
+Date   : Sun Jul 18 09:49:56 2021
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: D0_reg (rising edge-triggered flip-flop clocked by CLKP)
+  Endpoint: D1_reg (rising edge-triggered flip-flop clocked by CLKM)
+  Path Group: CLKM
+  Path Type: min
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLKP (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  D0_reg/CP (FD1)                          0.00      20.00 r
+  D0_reg/Q (FD1) <-                        1.24      21.24 r
+  D0 (net)                                 0.00      21.24 r
+  D1_reg/D (FD1)                           0.00      21.24 r
+  data arrival time                                  21.24
+
+  clock CLKM (rise edge)                  20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  D1_reg/CP (FD1)                          0.00      20.00 r
+  library hold time                        0.40      20.40
+  data required time                                 20.40
+  -----------------------------------------------------------
+  data required time                                 20.40
+  data arrival time                                 -21.24
+  -----------------------------------------------------------
+  slack (MET)                                         0.84
+
+
+1

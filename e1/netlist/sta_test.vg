@@ -1,0 +1,16 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : O-2018.06-SP1
+// Date      : Sun Jul 18 09:49:56 2021
+/////////////////////////////////////////////////////////////
+
+
+module Fsat2Slow ( CLKP, CLKM, DIN, DOUT );
+  input CLKP, CLKM, DIN;
+  output DOUT;
+  wire   D0;
+
+  FD1 D0_reg ( .D(DIN), .CP(CLKP), .Q(D0) );
+  FD1 D1_reg ( .D(D0), .CP(CLKM), .Q(DOUT) );
+endmodule
+

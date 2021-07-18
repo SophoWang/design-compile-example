@@ -1,0 +1,19 @@
+o Run command as below
+$ dc_shell-t -no_log -f scripts/run.tcl 
+
+o Directory structure
+./e1
+├── netlist
+│   └── sta_test.vg
+├── README
+├── report
+│   └── timing.rpt
+├── rtl
+│   └── sta_test.v
+├── scripts
+│   ├── cst.tcl
+│   ├── rpt.tcl
+│   └── run.tcl
+└── .synopsys_dc.setup
+
+4 directories, 9 files
